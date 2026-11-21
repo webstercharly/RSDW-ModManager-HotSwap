@@ -8,10 +8,10 @@ hotkeys.
 
 1. Install the Mod Manager first (see its README).
 2. Copy the `Modules/HotSwap` folder from this repository into
-   `RSDWLoadoutManager/Modules/`.
+   `RSDWModManager/Modules/`.
 3. Press **RELOAD MODS** in the manager, or restart the game.
 
-Your swaps are saved to `%LOCALAPPDATA%\RSDWLoadoutManager\gear-swaps.json`
+Your swaps are saved to `%LOCALAPPDATA%\RSDWModManager\gear-swaps.json`
 (with rolling backups), so updating the module never replaces them.
 
 ## Use

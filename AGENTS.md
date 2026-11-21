@@ -1,7 +1,7 @@
 # Agent entry point
 
 This repository is the **Hot Swap** module for the RSDW Mod Manager. It installs as
-`RSDWLoadoutManager/Modules/HotSwap` and contains no shell code.
+`RSDWModManager/Modules/HotSwap` and contains no shell code.
 
 Before changing code, read the Mod Manager repository's `AGENTS.md`,
 `README.md` (module contract), `.agent/SKILLS.md` and
