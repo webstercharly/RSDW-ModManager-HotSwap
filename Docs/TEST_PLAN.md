@@ -15,6 +15,12 @@ repository's `Docs/TEST_PLAN.md`.
 - [ ] Presets are compact, ordered by swap number, and show binding and item count.
 - [ ] An 11-item row shows only `11 ITEMS`; selecting it shows `Equipment (5 shown, +6 more)` and five visible names.
 - [ ] Six actions fit without clipped labels or an unnecessary action scrollbar.
+- [ ] Edit Gear shows all 12 slots across two pages with saved/equipped names.
+- [ ] Use Equipped changes only the selected preset slot.
+- [ ] Choose from Backpack lists only compatible gear, revalidates the selected
+  item before saving, and returns to the gear editor.
+- [ ] Saving a two-handed weapon clears an incompatible saved left-hand item;
+  a two-handed preset refuses a new shield until its right hand changes.
 - [ ] Select Swap 1, press Set Key, then capture `SHIFT+F1` within three seconds.
 - [ ] Capture and execute `MOUSE4`, `MOUSE5` and middle-mouse bindings.
 - [ ] Let key capture time out and confirm the existing binding remains unchanged.

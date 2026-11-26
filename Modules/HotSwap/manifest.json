@@ -3,7 +3,7 @@
   "id": "hot-swap",
   "name": "Hot Swap",
   "description": "Colour-coded combat equipment swaps and configurable hotkeys.",
-  "version": "0.1.0-dev",
+  "version": "0.1.3-dev",
   "order": 20,
   "entry": "module.lua",
   "ui": {
@@ -12,7 +12,13 @@
       {
         "id": "toggle",
         "label": "APPLY SWAP",
-        "inputHint": "Swap number (example: 1)",
+        "primary": true,
+        "inputHint": "Swap number (1–99), or a shortcut for Set Key",
+        "requiresInput": true
+      },
+      {
+        "id": "edit",
+        "label": "EDIT GEAR",
         "requiresInput": true
       },
       {
@@ -29,20 +35,27 @@
       },
       {
         "id": "set-slot",
-        "label": "SET SLOT",
-        "inputHint": "Swap # + equipment slot 0-11 (example: 1 7)",
-        "requiresInput": true
+        "label": "USE EQUIPPED",
+        "requiresInput": false
+      },
+      {
+        "id": "open-backpack",
+        "label": "CHOOSE FROM BACKPACK"
+      },
+      {
+        "id": "save-backpack-item",
+        "label": "SAVE TO SLOT",
+        "primary": true
       },
       {
         "id": "remove-slot",
         "label": "REMOVE SLOT",
-        "inputHint": "Swap # + equipment slot 0-11 (example: 1 8)",
-        "requiresInput": true
+        "requiresInput": false
       },
       {
         "id": "clear",
         "label": "CLEAR SWAP",
-        "inputHint": "Swap #, or Swap # + key (example: 1 SHIFT+F1)",
+        "inputHint": "Swap number (example: 1)",
         "requiresInput": true,
         "destructive": true
       }

@@ -16,20 +16,21 @@ Your swaps are saved to `%LOCALAPPDATA%\RSDWModManager\gear-swaps.json`
 
 ## Use
 
-Open `HOT SWAP` in the manager. It can check carried gear, capture equipped gear
-into a numbered preset, apply or toggle it, and clear a preset with two-step
-confirmation. Each preset row shows its binding and item count; selecting one
-fills its number and shows an equipment preview such as
-`Equipment (5 shown, +6 more)`.
+Open `HOT SWAP` in the manager. It can capture equipped gear into a numbered
+preset, apply it, edit individual saved slots and clear a preset with two-step
+confirmation. Each compact preset row shows its binding and item count.
 
-Actions: **Apply**, **Capture Current**, **Set Key**, **Set Slot**,
-**Remove Slot**, **Clear**.
+Select a preset and use **Edit Gear** to compare all 12 saved/equipped slots.
+**Use Equipped** captures the currently worn item for the selected slot;
+**Choose from Backpack** opens a filtered item picker. Saving a two-handed
+weapon clears an incompatible saved shield, and the selected backpack item is
+revalidated immediately before the preset is written.
 
 - Apply is idempotent. It runs a preflight, dispatches only the changed slots,
   and verifies the whole replicated target. Pressing the same binding again
   keeps that preset applied.
-- To change one piece of gear without recapturing, equip the replacement and use
-  `swap number + slot 0-11` with **Set Slot**.
+- To change one piece without recapturing, use the gear editor. The explicit
+  `swap number + slot 0-11` input remains supported by **Use Equipped**.
 - **Set Key**: select a swap, press the button, then press the combination within
   three seconds. Direct `1 SHIFT+F1` input and `NONE` (unbind) also work.
   Keyboard keys, `MOUSE4`, `MOUSE5` and the middle mouse button are supported.
