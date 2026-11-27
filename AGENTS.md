@@ -19,5 +19,6 @@ Module rules:
 - Parse every changed Lua file (`npx luaparse <file>`) and validate every changed
   JSON file. Never tick a `Docs/TEST_PLAN.md` box until the behaviour is confirmed
   inside Dragonwilds.
+- Run `Tools/Test-PublicPackage.ps1` before a public commit or handoff.
 - Update `HANDOFF.md` before ending a session: objective, next step, files changed,
   tests run, live results (kept separate from static checks) and open risks.

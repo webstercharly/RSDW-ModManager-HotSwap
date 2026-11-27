@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "hot-swap",
+  "boundaryScanPaths": ["Modules"],
+  "forbiddenPatterns": [
+    { "pattern": "rlm_(items|shortcut_bindings|cheats)", "reason": "private item or shortcut dependency" },
+    { "pattern": "(SpawnActor|generate_item|drop_item)", "reason": "item generation or drop path" }
+  ],
+  "validatePng": false
+}
